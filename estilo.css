@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+header{
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(144, 194, 68);
+    color: black;
+}
+header h2{
+    text-align: center;
+    background-color: rgb(144, 194, 68);
+    color: black;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.fotodetrail{
+    text-align: center;
+    background-color: rgb(20, 71, 20);
+}
+.video{
+    text-align: center;
+    background-color: rgb(186, 235, 112);
+}
+footer{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(144, 194, 68);
+}
