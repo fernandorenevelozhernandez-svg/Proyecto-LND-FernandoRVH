@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="icon" type="img/png" href="imag/b-trail.png" />
+</head>
+<body>
+    <header>
+        <a href="pagina1.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipacion.html">Equipación</a>
+        <h2>B - TRAIL CONTACTO</h2>
+    </header><hr>
+    <div class="fotodetejeda">
+        <img src="imag\fotodetejeda.jpg">
+    </div><hr>
+    <div class="formulario">
+        <form action="https://formsubmit.co/fernandorenevelozhernandez@ieselrincon.es" method="POST">
+            <!--Nombre-->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre"><br><br>
+            <!--Profesor-->
+            <label for="puesto">Puesto &nbsp;</label>
+                <select id="puesto" name="puesto">
+                <option value="1">Entrenador</option>
+                <option value="2">Corredor</option>
+                <option value="3">Simpatizante</option>
+                </select><br><br>
+            <!--Vienes de otro club-->
+            <p>¿Vienes de otro club?</p>
+            <input type="radio" id="si" name="respuesta" value="si">
+            <label for="si, vengo de otro club">Sí</label>
+            <input type="radio" id="no" name="respuesta" value="no">
+            <label for="no, no vengo de otro club">No</label> <br><br>
+            <!--si es así de cual-->
+            <label for="club">Club &nbsp; &nbsp;</label>
+                <select id="club" name="club">
+                <option value="nada">Ninguno</option>
+                <option value="CTT">Carphial Teror Trail</option>
+                <option value="AKT">Arkana Koalas Trail</option>
+                <option value="BSP">B-Sporty</option>
+                <option value="HIL">Hilera</option>
+                <option value="BCR">Bichillo Runner</option>
+                <option value="CHR">Chimuelos Runners</option>
+                </select><br><br>
+            <!--Correo responsible con este tutorial, solo funciona
+            con mi correo https://www.youtube.com/watch?v=jZjHY6iA6PY&t=387s-->
+            <label for="email">E-mail &nbsp;</label>
+            <input type="email" name="email" id="email"><br><br>
+            <!--Mensaje-->
+            <label for="mensaje">Mensaje</label>
+            <input type="text" name="mensaje" id="mensaje" cols="30" rows="2"><br><br>
+            <!--Boton tambien del video-->
+            <input class="btn" type="submit" value="A CORRER!">
+        </form><br>
+        <div class="mapa">
+        <h3>Visítanos</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.626416142221!2d-15.449318323955326!3d28.12741267594431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40951b9f35d249%3A0x13658f2119541d23!2sC.%20Covadonga%2C%2035010%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1770967973291!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer class="patrocinadores">
+        <img src="imag/Garmin_logo_2006.svg.png" width="10%" height="10%">
+        <img src="imag/Salomon-Logo.png" width="9%" height="20%">
+        <img src="imag/hoka_800.png" width="5%" height="20%">
+        <img src="imag/merrell_logo.png" width="9%" height="20%">
+        <img src="imag/aonijie.png" width="5%" height="20%">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 205, 68);
+}
+/*cabecera de distinto color*/
+header{
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(207, 205, 68);
+    color: black;
+}
+header h2{
+    text-align: center;
+    background-color: rgb(207, 205, 68);
+    color: black;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.fotodetejeda{
+    text-align: center;
+    background-color: rgb(255, 252, 89);
+}
+/*tamaño de mi foto*/
+.fotodetejeda img{
+    width: 50%;
+    height: 30%;
+}
+/*Contacto*/
+.formulario{
+    text-align: center;
+    margin: 1%;
+}
+/*para agrandar la selección*/
+.formulario select{
+    width: 9.4%;
+    text-align: center;
+}
+/*mapa centrado*/
+.mapa{
+    text-align: center;
+}
+/*botón personalizado*/
+.btn{
+    background-color: rgb(255, 252, 89);
+    width: 100px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(173, 171, 58);
+}
+footer{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 252, 89);
+}
