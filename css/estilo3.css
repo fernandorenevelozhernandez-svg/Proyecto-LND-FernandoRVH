@@ -1,127 +1,120 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+body,
+html {
     padding: 0;
+    margin: 0;
+    background-color: #117de9;
+    font-family: Arial, Helvetica, sans-serif
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(45, 182, 206);
-}
-/*CONTENEDOR DE DIAPOSITIVAS*/
-ul.slider {
+header {
+    width: 100vw;
+    height: 75px;
     position: relative;
+    background: #4b9df0;
 }
 
-/*La primera diapositiva siempre va a estar visible*/
+/* TÍTULO CENTRADO */
+header h2 {
+    position: absolute;
+    left: 47%;
+    top: 20px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header a {
+    float: right;
+    margin: 30px 20px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00324b;
+}
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 440px;
+    margin: 40px auto 0 auto;
+}
+
+/* DIAPOSITIVAS */
+ul.slider li {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity .5s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* PRIMERA VISIBLE */
 ul.slider li:first-child {
     opacity: 1;
 }
 
-/*pseudo-clase que selecciona el elemento cuyo id coincide con el fragmento de la URL actual (el texto después del # en la barra de direcciones)*/
+/* TARGET */
 ul.slider li:target {
     opacity: 1;
 }
 
-nav {
-    position: relative;
-    top: 100px;
-    left: 50px;
-}
-
-
-/*  A partir de aquí el CSS es puro diseño visual para hacer una versión más vistosa.*/
-
-
-ul.slider {
-    padding: 30px;
-}
-
-ul.slider li {
-    width: 100px;/*ocupa el ancho del navegador*/
-    height: 100px;/*ocupa el alto del navegador*/
-    position: absolute;
-    /*Para que todas las diapositivas ocupen el mismo sitio*/
-    left: 0px;
-    top: 0px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    opacity: 0;/*por defecto todas las diapositivas están ocultas*/
-    transition: opacity .5s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: calc(1.5rem + 1vw);/*para que el texto aumente con el tamaño de la ventana*/
-    text-align: center;
-}
-
+/* IMAGEN GRANDE */
 .slider img {
-    width: 10%;
-    height: 10%;
+    width: 800px;
+    height: 450px;
 }
 
-.menu li a {
-    padding-top: 30px;
-}
-
+/* TEXTO SOBRE IMAGEN */
 .slider li p {
-    position: absolute;/*para mostrar el texto en la diapositiva*/
+    position: absolute;
     height: 60px;
-    width: 70%;
-    left: 50px;
-    top: 50px;     
+    width: 300px;
+    left: 20px;
+    top: 20px;
     color: white;
 }
 
+/* MINIATURAS DEBAJO */
 nav {
-    width: 100vw;
-    position: absolute;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #f1f2f3;
+    width: 800px;
+    margin: 20px auto 0 auto;
+    position: relative;
+    background: #117de9;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 nav ul li {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    width: 200px;
+    height: 290px;
 }
 
+/* ENLACES MINIATURAS */
 nav a {
-    font-size: calc(1.2rem + 1vw);
     text-decoration: none;
     font-weight: bold;
-    color: #00324b;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.8;
-    flex-grow: 1;
+    color: #23adf1;
+}
+
+/* IMÁGENES MINIATURA */
+nav img {
+    width: 210px;
+    height: 263px;
+}
+footer{
+    display: inline-block;
     text-align: center;
-    border-top: 5px solid #00324b;
-    border-right: 1px solid #00324b;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-nav li:last-child a {/*Al último elemento del menú de dipapositivas le quita el borde derecho*/
-    border-right: 0;
-}
-
-nav a:hover {
-    background-color: black;
-    color: #fff;
-    border-top-color: white;
-}
-
-nav a:active {
-    border-top-color: #f90;
-    background: #f90;
-    color: #00324b;
+    background-color: rgb(0, 183, 255);
 }
