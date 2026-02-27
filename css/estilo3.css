@@ -32,6 +32,8 @@ header a {
 header img{
     width: 81px;
 }
+/*--Carrusel de imágenes hecho con el siguiente video
+    https://www.youtube.com/watch?v=KD1Yo8a_Qis*/
 .carrusel {
     margin: 100px auto;
     width: 90%;
@@ -67,7 +69,7 @@ header img{
 .contenedor {
     margin-top: 30px;
 }
-
+/*productos*/
 .producto {
     display: inline-block;
     margin: 20px;
@@ -91,7 +93,7 @@ https://youtu.be/n9yI6fjkrfE?si=_u1X0iH57ixwwrgy*/
 }
 /*mediaquery para tablet*/
 @media (max-width: 1024px){
-    
+
 }
 /*mediaquery para móviles*/
 @media (max-width: 400px){
