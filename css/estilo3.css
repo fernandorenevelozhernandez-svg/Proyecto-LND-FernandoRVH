@@ -82,3 +82,21 @@ footer{
     text-align: center;
     background-color: rgb(0, 183, 255);
 }
+/*media hecho con otro tutorial
+https://youtu.be/n9yI6fjkrfE?si=_u1X0iH57ixwwrgy*/
+
+/*mediaquery para el pc*/
+@media (max-width: 1440px){
+
+}
+/*mediaquery para tablet*/
+@media (max-width: 1024px){
+    
+}
+/*mediaquery para móviles*/
+@media (max-width: 400px){
+    /*cambio de color para mejor vista en móvil*/
+    body{
+        background-color: #FDFBD4;
+    }
+}
