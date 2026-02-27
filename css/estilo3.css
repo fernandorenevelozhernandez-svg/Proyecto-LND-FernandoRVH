@@ -32,33 +32,37 @@ header a {
 header img{
     width: 81px;
 }
-.carrusel{
+.carrusel {
     margin: 100px auto;
     width: 90%;
-    border: 5px solid green;
+    border: 5px solid black;
     display: flex;
+    overflow-x: auto;
 }
-.carrusel::-webkit-scrollbar{
+.carrusel::-webkit-scrollbar {
     display: none;
 }
-.grupo{
+.grupo {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
     animation: spin 5s infinite linear;
+    padding-right: 1em;
 }
-.tarjetas{
+.tarjetas {
+    flex: 0 0 5em;
     height: 5em;
     padding: 1em;
-    background: rgb(130, 180, 54);
+    background: rgb(88, 183, 238);
     font-size: 3rem;
     border-radius: .2em;
     text-align: center;
     align-content: center;
 }
-@keyframes spin{
+@keyframes spin {
     from {translate: 0;}
+    to {translate: -100%;}
 }
 .contenedor {
     margin-top: 30px;
