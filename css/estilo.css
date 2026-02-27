@@ -7,20 +7,32 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
-header{
-    padding: 10px;
-    text-align: right;
-    background-color: rgb(144, 194, 68);
-    color: black;
+header {
+    width: 100vw;
+    height: 75px;
+    position: relative;
+    background: rgb(144, 194, 68);
 }
-header h2{
-    text-align: center;
-    background-color: rgb(144, 194, 68);
-    color: black;
+
+/* TÍTULO CENTRADO */
+header h2 {
+    position: absolute;
+    left: 47%;
+    top: 20px;
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
 }
-header a{
+
+header a {
+    float: right;
+    margin: 30px 20px 0 0;
     text-decoration: none;
-    color: black;
+    font-weight: bold;
+    color: #000032;
+}
+header img{
+    width: 81px;
 }
 .fotodetrail{
     text-align: center;

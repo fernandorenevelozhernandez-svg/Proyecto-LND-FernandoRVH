@@ -29,89 +29,49 @@ header a {
     font-weight: bold;
     color: #00324b;
 }
-ul,li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
+header img{
+    width: 81px;
 }
-
-ul.slider {
-    position: relative;
-    width: 800px;
-    height: 440px;
-    margin: 40px auto 0 auto;
-}
-
-/* DIAPOSITIVAS */
-ul.slider li {
-    width: 500px;
-    height: 350px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    transition: opacity .5s;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-/* PRIMERA VISIBLE */
-ul.slider li:first-child {
-    opacity: 1;
-}
-
-/* TARGET */
-ul.slider li:target {
-    opacity: 1;
-}
-
-/* IMAGEN GRANDE */
-.slider img {
-    width: 800px;
-    height: 450px;
-}
-
-/* TEXTO SOBRE IMAGEN */
-.slider li p {
-    position: absolute;
-    height: 60px;
-    width: 300px;
-    left: 20px;
-    top: 20px;
-    color: white;
-}
-
-/* MINIATURAS DEBAJO */
-nav {
-    width: 800px;
-    margin: 20px auto 0 auto;
-    position: relative;
-    background: #117de9;
-}
-
-nav ul {
+.carrusel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid green;
     display: flex;
-    justify-content: space-between;
+}
+.carrusel::-webkit-scrollbar{
+    display: none;
+}
+.grupo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+}
+.tarjetas{
+    height: 5em;
+    padding: 1em;
+    background: rgb(130, 180, 54);
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+@keyframes spin{
+    from {translate: 0;}
+}
+.contenedor {
+    margin-top: 30px;
 }
 
-nav ul li {
-    width: 200px;
-    height: 290px;
+.producto {
+    display: inline-block;
+    margin: 20px;
 }
 
-/* ENLACES MINIATURAS */
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #23adf1;
-}
-
-/* IMÁGENES MINIATURA */
-nav img {
-    width: 210px;
-    height: 263px;
+.producto img {
+    width: 150px;
+    height: 150px;
 }
 footer{
     display: inline-block;
