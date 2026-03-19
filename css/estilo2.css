@@ -59,13 +59,8 @@ header img{
     text-align: center;
 }
 /*botón personalizado*/
-.btn{
+.boton button{
     background-color: rgb(255, 252, 89);
-    width: 100px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: rgb(173, 171, 58);
 }
 footer{
     display: inline-block;
