@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>B - TRAIL</title>
+        <link>http://127.0.0.1:5500/html/pagina1.html</link>
+        <description>Noticias sobre Trail y Próximas Carreras</description>
+        <item>
+            <title>Noticias Trail</title>
+            <link>https://www.runnersworld.com/es/trail-running/</link>
+            <description>Novedades sobre Trail</description>
+        </item>
+        <item>
+            <title>Próximas carreras GC</title>
+            <link>https://cimarunning.com/blog/calendariodecarreras/</link>
+            <description>Próximas carreras de Trail</description>
+        </item>
+    </channel>
+</rss>
